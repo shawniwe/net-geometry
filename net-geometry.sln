@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34723.18
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mindbox.Geometry", "src\Mindbox.Geometry\Mindbox.Geometry.csproj", "{9383F633-FAEA-4179-A647-BE338717E467}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A701B1AA-19DE-4FF5-AE5D-45CDD5D08BC8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{6CB43D1B-6601-4363-A3C6-066F810EFAED}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mindbox.Geometry.Tests", "tests\Mindbox.Geometry.Tests\Mindbox.Geometry.Tests.csproj", "{18B6295A-A651-4D9D-A775-E8EE0682AA28}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9383F633-FAEA-4179-A647-BE338717E467}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9383F633-FAEA-4179-A647-BE338717E467}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9383F633-FAEA-4179-A647-BE338717E467}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9383F633-FAEA-4179-A647-BE338717E467}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18B6295A-A651-4D9D-A775-E8EE0682AA28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18B6295A-A651-4D9D-A775-E8EE0682AA28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18B6295A-A651-4D9D-A775-E8EE0682AA28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18B6295A-A651-4D9D-A775-E8EE0682AA28}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9383F633-FAEA-4179-A647-BE338717E467} = {A701B1AA-19DE-4FF5-AE5D-45CDD5D08BC8}
+		{18B6295A-A651-4D9D-A775-E8EE0682AA28} = {6CB43D1B-6601-4363-A3C6-066F810EFAED}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {862B6CF9-1F81-429D-BA64-C76A50ED08AF}
+	EndGlobalSection
+EndGlobal
