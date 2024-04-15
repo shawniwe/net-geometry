@@ -1,5 +1,5 @@
 # .net-geometry
-### The library for calculating the areas of shapes
+- Library for calculating the areas of shapes. This library was developed as part of a test task for the "Mindbox" company.
 
-### stack:
+## Stack
 - .netstandard2.0
