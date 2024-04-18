@@ -13,7 +13,7 @@ namespace Mindbox.Geometry.Abstract
             set
             {
                 if (value <= 0)
-                    throw new ArgumentException(message: "SideX should be greater than or equal to 0", paramName: nameof(value));
+                    throw new ArgumentException(message: "SideX should be greater than 0", paramName: nameof(value));
 
                 _sideX = value;
             }
@@ -27,7 +27,7 @@ namespace Mindbox.Geometry.Abstract
             set
             {
                 if (value <= 0)
-                    throw new ArgumentException(message: "SideY should be greater than or equal to 0", paramName: nameof(value));
+                    throw new ArgumentException(message: "SideY should be greater than 0", paramName: nameof(value));
 
                 _sideY = value;
             }
@@ -41,7 +41,7 @@ namespace Mindbox.Geometry.Abstract
             set
             {
                 if (value <= 0)
-                    throw new ArgumentException(message: "SideZ should be greater than or equal to 0", paramName: nameof(value));
+                    throw new ArgumentException(message: "SideZ should be greater than 0", paramName: nameof(value));
 
                 _sideZ = value;
             }
