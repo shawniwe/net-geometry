@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mindbox.Geometry.Tests", "t
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mindbox.Geometry.Example", "src\Mindbox.Geometry.Example\Mindbox.Geometry.Example.csproj", "{AA080067-0D4A-437B-AE03-5A7A0ED3CDA1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mindbox.Geometry.Domain", "src\Mindbox.Geometry.Domain\Mindbox.Geometry.Domain.csproj", "{0B8BCBF2-8A99-455A-94E2-0CA7F2EAA5FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mindbox.Geometry.Domain", "src\Mindbox.Geometry.Domain\Mindbox.Geometry.Domain.csproj", "{0B8BCBF2-8A99-455A-94E2-0CA7F2EAA5FD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sql", "sql", "{97556A33-953C-4FA0-8091-C99DDA3230FD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
