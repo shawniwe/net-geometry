@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using Mindbox.Geometry.Abstract;
 
 namespace Mindbox.Geometry.Domain.Figures
@@ -45,6 +47,15 @@ namespace Mindbox.Geometry.Domain.Figures
                 _sideZ = value;
             }
 
+        }
+
+        public bool IsRight()
+        {
+            var sides = new List<double> { SideX, SideY, SideZ };
+            double biggestSide = sides.Max();
+            sides.Remove(biggestSide);
+
+            return Math.Round(Math.Pow(biggestSide, 2), 3) == sides.Select(x => Math.Pow(x, 2)).Sum();
         }
 
         public Triangle(double sideX, double sideY, double sideZ)
