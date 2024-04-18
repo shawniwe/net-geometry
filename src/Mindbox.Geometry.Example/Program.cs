@@ -16,7 +16,7 @@ namespace Mindbox.Geometry.Example
             double circleArea = calculator.CalculateArea(circle);
             Console.WriteLine($"area of circle with radius {circle.Radius} is {circleArea}");
 
-            var triangle = new Triangle(sideX: 1, sideY: 1, sideZ: Math.Sqrt(2));
+            var triangle = new Triangle(sideX: 5, sideY: 5, sideZ: 8);
             double triangleArea = calculator.CalculateArea(triangle);
             Console.WriteLine($"area of triangle with sides [{triangle.SideX}, {triangle.SideY}, {triangle.SideZ}] is {triangleArea}");
             Console.WriteLine($@"triangle is right?: {triangle.IsRight()}");

@@ -3,17 +3,10 @@
 namespace Mindbox.Geometry.Example.CustomFigures
 {
     // Пример добавления фигуры. Unit-test'ы на эту фигуру не написал, т. к. это демо-проект
-    public class Rectangle : IFigure
+    public class Rectangle : RectangleBase
     {
-        public double Width { get; set; }
-        public double Height { get; set; }
+        public Rectangle(double width, double height) : base(width, height) { }
 
-        public Rectangle(double width, double height)
-        {
-            Width = width;
-            Height = height;
-        }
-
-        public double CalculateArea() => Width * Height;
+        public override double CalculateArea() => Width * Height;
     }
 }

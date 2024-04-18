@@ -3,26 +3,10 @@ using Mindbox.Geometry.Abstract;
 
 namespace Mindbox.Geometry.Domain.Figures
 {
-    public class Circle : IFigure
+    public class Circle : CircleBase
     {
-        private double _radius;
-        public double Radius
-        {
-            get => _radius;
-            set
-            {
-                if (value <= 0)
-                    throw new ArgumentException(message: "Circle radius should be greater than or equal to 0");
+        public Circle(double radius) : base(radius) { }
 
-                _radius = value;
-            }
-        }
-
-        public Circle(double radius)
-        {
-            Radius = radius;
-        }
-
-        public double CalculateArea() => Math.PI * Math.Pow(Radius, 2);
+        public override double CalculateArea() => Math.PI * Math.Pow(Radius, 2);
     }
 }
