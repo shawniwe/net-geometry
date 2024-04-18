@@ -1,5 +1,6 @@
 using FluentAssertions;
 using Mindbox.Geometry.Abstract;
+using Mindbox.Geometry.Domain;
 using Moq;
 
 namespace Mindbox.Geometry.Tests

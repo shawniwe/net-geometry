@@ -1,4 +1,5 @@
 ﻿using Mindbox.Geometry.Abstract;
+using Mindbox.Geometry.Domain;
 using Mindbox.Geometry.Domain.Figures;
 using Mindbox.Geometry.Example.CustomFigures;
 using Mindbox.Geometry.Example.Decorators;
