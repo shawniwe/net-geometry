@@ -12,9 +12,17 @@ namespace Mindbox.Geometry.Tests.Domain
 
             double area = sut.CalculateArea();
 
-            area.Should().Equals(12);
+            area.Should().Be(12);
         }
 
+        /*
+         * В задании немного не хватает информации по бизнес-логике, поэтому, делаю предположение,
+         * что заказчику не требуется допускать фигуры с нулевым или отрицательным значением сторон/
+         * радиуса. На реальном кейсе, я бы обратился за уточнениями по ТЗ, т. к., например, если
+         * модели фигур используются в графическом редакторе, фигура запросто может иметь нулевую
+         * сторону и это не будет считаться ошибкой (даже если это не будет иметь смысла), хотя,
+         * с точки зрения математики, треугольник с нулевой стороной больше напоминает отрезок :)
+        */
         [Theory]
         [InlineData(0, 8, 5)]
         [InlineData(5, 0, 5)]
@@ -22,15 +30,14 @@ namespace Mindbox.Geometry.Tests.Domain
         [InlineData(-5, 8, 5)]
         [InlineData(5, -8, 5)]
         [InlineData(5, 8, -5)]
-        public void ArgumentException_при_попытке_рассчитать_площадь_треугольника_с_невалидным_значением_одной_из_сторон(
+        public void ArgumentException_при_попытке_создать_треугольник_с_невалидным_значением_одной_из_сторон(
             double sideX,
             double sideY,
             double sideZ)
         {
-            var sut = new Triangle(sideX, sideY, sideZ);
-            var calculationMethod = sut.CalculateArea;
-            // отсутствует блок act, в силу специфики библиотеки
-            calculationMethod.Should().Throw<ArgumentException>();
+            // отсутствует блок act, в силу специфики теста
+            var sut = () => new Triangle(sideX, sideY, sideZ);
+            sut.Should().Throw<ArgumentException>();
         }
     }
 }

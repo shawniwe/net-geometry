@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Mindbox.Geometry.Domain\Mindbox.Geometry.Domain.csproj" />
     <ProjectReference Include="..\Mindbox.Geometry\Mindbox.Geometry.csproj" />
   </ItemGroup>
 

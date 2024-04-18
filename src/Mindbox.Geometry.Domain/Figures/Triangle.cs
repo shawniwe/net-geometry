@@ -5,9 +5,47 @@ namespace Mindbox.Geometry.Domain.Figures
 {
     public class Triangle : IFigure
     {
-        public double SideX { get; set; }
-        public double SideY { get; set; }
-        public double SideZ { get; set; }
+        private double _sideX;
+        public double SideX
+        {
+            get => _sideX;
+            set
+            {
+                if (value <= 0)
+                    throw new ArgumentException(message: "SideX should be greater than 0", paramName: nameof(value));
+
+                _sideX = value;
+            }
+
+        }
+
+        private double _sideY;
+        public double SideY
+        {
+            get => _sideY;
+            set
+            {
+                if (value <= 0)
+                    throw new ArgumentException(message: "SideY should be greater than 0", paramName: nameof(value));
+
+                _sideY = value;
+            }
+
+        }
+
+        private double _sideZ;
+        public double SideZ
+        {
+            get => _sideZ;
+            set
+            {
+                if (value <= 0)
+                    throw new ArgumentException(message: "SideZ should be greater than 0", paramName: nameof(value));
+
+                _sideZ = value;
+            }
+
+        }
 
         public Triangle(double sideX, double sideY, double sideZ)
         {
@@ -16,6 +54,10 @@ namespace Mindbox.Geometry.Domain.Figures
             SideZ = sideZ;
         }
 
-        public double CalculateArea() => throw new NotImplementedException();
+        public double CalculateArea()
+        {
+            double halfPerimeter = (SideX + SideY + SideZ) / 2;
+            return Math.Sqrt(halfPerimeter * (halfPerimeter - SideX) * (halfPerimeter - SideY) * (halfPerimeter - SideZ));
+        }
     }
 }

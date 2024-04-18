@@ -1,4 +1,6 @@
-﻿namespace Mindbox.Geometry.Example
+﻿using Mindbox.Geometry.Domain.Figures;
+
+namespace Mindbox.Geometry.Example
 {
     internal class Program
     {
