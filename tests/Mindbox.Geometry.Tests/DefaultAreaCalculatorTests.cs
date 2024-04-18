@@ -1,4 +1,4 @@
-using FluentAssertions;
+п»їusing FluentAssertions;
 using Mindbox.Geometry.Abstract;
 using Mindbox.Geometry.Domain;
 using Moq;
@@ -8,7 +8,7 @@ namespace Mindbox.Geometry.Tests
     public class DefaultAreaCalculatorTests
     {
         [Fact]
-        public void sut_вызывает_метод_CalculateArea_внутри_фигуры()
+        public void sut_РІС‹Р·С‹РІР°РµС‚_РјРµС‚РѕРґ_CalculateArea_РІРЅСѓС‚СЂРё_С„РёРіСѓСЂС‹()
         {
             var figure = new Mock<IFigure>();
             var sut = new DefaultAreaCalculator();
@@ -19,7 +19,7 @@ namespace Mindbox.Geometry.Tests
         }
 
         [Fact]
-        public void sut_выбрасывает_ArgumentNullException_если_фигура_равна_null()
+        public void sut_РІС‹Р±СЂР°СЃС‹РІР°РµС‚_ArgumentNullException_РµСЃР»Рё_С„РёРіСѓСЂР°_СЂР°РІРЅР°_null()
         {
             IFigure? figure = null;
             var sut = new DefaultAreaCalculator();
