@@ -3,6 +3,6 @@
 
 ## Stack
 - .netstandard2.1
-- .net 8 (in example project)
+- .NET 8 (in example project)
 - Moq 4.20.70
 - FluentAssertions 6.12.0
