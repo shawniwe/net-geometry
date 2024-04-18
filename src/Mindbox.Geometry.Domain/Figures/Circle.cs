@@ -12,7 +12,7 @@ namespace Mindbox.Geometry.Domain.Figures
             set
             {
                 if (value <= 0)
-                    throw new ArgumentException(message: "Circle radius should be greater than 0");
+                    throw new ArgumentException(message: "Circle radius should be greater than or equal to 0");
 
                 _radius = value;
             }
