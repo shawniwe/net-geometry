@@ -2,10 +2,7 @@
 
 namespace Mindbox.Geometry.Example.CustomFigures
 {
-    /*
-     * Пример добавления фигуры. Unit-test'ы на эту фигуру не написал,
-     * т. к. это демо-проект и модель не должна использоваться
-     */
+    // Пример добавления фигуры. Unit-test'ы на эту фигуру не написал, т. к. это демо-проект
     public class Rectangle : IFigure
     {
         public double Width { get; set; }
